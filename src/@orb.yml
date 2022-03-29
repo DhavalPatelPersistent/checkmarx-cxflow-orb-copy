@@ -1,0 +1,22 @@
+version: 2.1
+
+description: >
+  Checkmarx CxFlow orb for executing Checkmarx Scans and Publishing results to various feedback channels.
+    Additional information regarding Checkmarx can be found here: https://checkmarx.atlassian.net/wiki/spaces/KC/overview
+    Additional information regarding CxFlow can be found here: https://github.com/checkmarx-ltd/cx-flow/wiki
+
+  The following Environment Variables must be set within your CircleCI project for this orb to function:
+    CHECKMARX_URL: High level dns entry for the Checkmarx Instance including protocol/port (i.e. https://cxsast.example.com)
+    CHECKMARX_USERNAME: Service Account within Checkmarx that will be used for triggering scans and retrieving results
+    CHECKMARX_PASSWORD: Password of the Service Account.
+    CHECKMARX_CLIENT_SECRET: Client secret key associated with your Checkmarx SAST account
+    AST_CLIENT_ID: Service account Client ID for Checkmarx AST
+    AST_CLIENT_SECRET: Client secret key associated with your Checkmarx AST account
+    SCA_USERNAME: Service Account within Checkmarx SCA that will be used for triggering scans and retrieving results
+    SCA_PASSWORD: Password of the Checkmarx SCA Service Account
+    SCA_TENANT: Tenant information of the Checkmarx SCA account
+    CXGO_CLIENT_SECRET: Client secret key associated with your Checkmarx CxGo account
+
+display:
+  home_url: "https://www.checkmarx.com"
+  source_url: "https://github.com/checkmarx-ts/checkmarx-cxflow-orb"
